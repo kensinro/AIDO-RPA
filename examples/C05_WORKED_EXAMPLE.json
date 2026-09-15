@@ -1,0 +1,32 @@
+{
+  "case_id": "C05",
+  "status": "public-safe illustrative rendering aligned to the retained case summary; not a verbatim archival ledger row",
+  "challenge": "Individually supported conditional branches do not entitle an unconditional global convergence claim.",
+  "objects": [
+    {"id": "P1", "class": "PATH", "state": "SUPPORTED", "meaning": "condition-specific branch 1"},
+    {"id": "P2", "class": "PATH", "state": "SUPPORTED", "meaning": "condition-specific branch 2"},
+    {"id": "G", "class": "GRAPH", "state": "UNSUPPORTED", "meaning": "unconditional branch-convergence claim"}
+  ],
+  "failure": {
+    "exists": true,
+    "type": "INVALID_COMPOSITION",
+    "localization": "branch-convergence subgraph",
+    "scope": "GRAPH"
+  },
+  "dependency": {
+    "candidate_downstream_claim": "uniform-effect claim",
+    "graph_reachable": true,
+    "material_dependency": true,
+    "consequence": "strong unconditional wording not entitled"
+  },
+  "preserved_reasoning": ["P1", "P2"],
+  "wording": {
+    "rejected_illustrative_formulation": "The effect holds uniformly across conditions.",
+    "permitted_illustrative_formulation": "Condition-specific effects are supported, but a uniform effect across conditions is not established."
+  },
+  "comparison": {
+    "claim_level_audit": "identifies the global endpoint as unsupported but does not by itself localize the convergence defect",
+    "pure_reachability": "identifies downstream graph connectivity but does not by itself determine which connected claims are materially affected",
+    "RPA": "localizes the convergence defect, preserves the two supported branches, bounds downstream consequence by material dependency, and lowers the reporting ceiling"
+  }
+}
