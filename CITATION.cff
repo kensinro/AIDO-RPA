@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "AIDO-RPA: Minimal Public Reference Layer for Reasoning Path Audit"
+message: "Please cite the associated manuscript when using or discussing this repository."
+type: software
+authors:
+  - family-names: Kong
+    given-names: Sin Guan
+repository-code: "https://github.com/kensinro/AIDO-RPA"
+license: "proprietary"
+year: 2026
